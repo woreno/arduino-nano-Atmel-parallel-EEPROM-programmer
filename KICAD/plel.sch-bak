@@ -1,0 +1,641 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L parallel~eprom~symbols:ArduinoNano U2
+U 1 1 5F5F90A6
+P 2300 3300
+F 0 "U2" H 1850 2161 50  0000 C CNN
+F 1 "ArduinoNano" H 1850 2070 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 2250 4250 50  0001 C CNN
+F 3 "" H 2250 4250 50  0001 C CNN
+	1    2300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5F695D67
+P 1550 4600
+F 0 "#PWR0106" H 1550 4350 50  0001 C CNN
+F 1 "GND" H 1555 4427 50  0000 C CNN
+F 2 "" H 1550 4600 50  0001 C CNN
+F 3 "" H 1550 4600 50  0001 C CNN
+	1    1550 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 4600 1550 4350
+Wire Wire Line
+	1550 4350 1800 4350
+Text Label 2450 3600 0    50   ~ 0
+D0
+Text Label 2450 3400 0    50   ~ 0
+D1
+Text Label 2450 3300 0    50   ~ 0
+D2
+Text Label 2450 3200 0    50   ~ 0
+D3
+Text Label 2450 3100 0    50   ~ 0
+D4
+Text Label 2450 3000 0    50   ~ 0
+D5
+Text Label 2450 2900 0    50   ~ 0
+D6
+Text Label 2450 2800 0    50   ~ 0
+D7
+Text Label 2450 3700 0    50   ~ 0
+CLOCK_STORE
+Text Label 2450 3800 0    50   ~ 0
+CLOCK_SHIFT
+Text Label 2450 3900 0    50   ~ 0
+SERIAL_DATA
+$Comp
+L power:GND #PWR0103
+U 1 1 5F6524DC
+P 6675 4450
+F 0 "#PWR0103" H 6675 4200 50  0001 C CNN
+F 1 "GND" H 6680 4277 50  0000 C CNN
+F 2 "" H 6675 4450 50  0001 C CNN
+F 3 "" H 6675 4450 50  0001 C CNN
+	1    6675 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6675 4350 6675 4450
+Text Label 7000 4150 2    50   ~ 0
+D1
+Text Label 7000 4250 2    50   ~ 0
+D2
+Text Label 8050 4350 0    50   ~ 0
+D3
+Text Label 8050 4250 0    50   ~ 0
+D4
+Text Label 8050 4150 0    50   ~ 0
+D5
+Text Label 8050 4050 0    50   ~ 0
+D6
+Text Label 8050 3950 0    50   ~ 0
+D7
+Text Label 8425 3550 2    50   ~ 0
+~WE
+Text Label 7000 3950 2    50   ~ 0
+A0
+Text Label 7000 3850 2    50   ~ 0
+A1
+Text Label 7000 3750 2    50   ~ 0
+A2
+Text Label 7000 3650 2    50   ~ 0
+A3
+Text Label 7000 3550 2    50   ~ 0
+A4
+Text Label 7000 3450 2    50   ~ 0
+A5
+Text Label 7000 3350 2    50   ~ 0
+A6
+Text Label 7000 3250 2    50   ~ 0
+A7
+Text Label 8050 3350 0    50   ~ 0
+A8
+Text Label 8050 3450 0    50   ~ 0
+A9
+Text Label 8050 3750 0    50   ~ 0
+A10
+Text Label 8050 3550 0    50   ~ 0
+A11
+Text Label 7000 3150 2    50   ~ 0
+A12
+Text Label 8050 3250 0    50   ~ 0
+A13
+Text Label 8425 3750 2    50   ~ 0
+A14
+Text Label 8050 3650 0    50   ~ 0
+~OE
+$Comp
+L 74xx:74HC595 U1
+U 1 1 5F58D6DF
+P 3975 3900
+F 0 "U1" H 3975 4681 50  0000 C CNN
+F 1 "74HC595" H 3975 4590 50  0000 C CNN
+F 2 "geral:standard_DIP_16Pins" H 3975 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 3975 3900 50  0001 C CNN
+	1    3975 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC595 U3
+U 1 1 5F58D8AC
+P 3975 2100
+F 0 "U3" H 3975 2881 50  0000 C CNN
+F 1 "74HC595" H 3975 2790 50  0000 C CNN
+F 2 "geral:standard_DIP_16Pins" H 3975 2100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 3975 2100 50  0001 C CNN
+	1    3975 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5F62D355
+P 3975 4625
+F 0 "#PWR0101" H 3975 4375 50  0001 C CNN
+F 1 "GND" H 3980 4452 50  0000 C CNN
+F 2 "" H 3975 4625 50  0001 C CNN
+F 3 "" H 3975 4625 50  0001 C CNN
+	1    3975 4625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5F62DF95
+P 3975 2825
+F 0 "#PWR0102" H 3975 2575 50  0001 C CNN
+F 1 "GND" H 3980 2652 50  0000 C CNN
+F 2 "" H 3975 2825 50  0001 C CNN
+F 3 "" H 3975 2825 50  0001 C CNN
+	1    3975 2825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3975 2800 3975 2825
+Wire Wire Line
+	3975 4600 3975 4625
+Wire Wire Line
+	3575 2300 3575 2800
+Wire Wire Line
+	3575 2800 3975 2800
+Connection ~ 3975 2800
+Wire Wire Line
+	3575 4100 3575 4600
+Wire Wire Line
+	3575 4600 3975 4600
+Connection ~ 3975 4600
+$Comp
+L power:+5V #PWR0105
+U 1 1 5F656C3C
+P 4300 3300
+F 0 "#PWR0105" H 4300 3150 50  0001 C CNN
+F 1 "+5V" H 4315 3473 50  0000 C CNN
+F 2 "" H 4300 3300 50  0001 C CNN
+F 3 "" H 4300 3300 50  0001 C CNN
+	1    4300 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3975 3300 4300 3300
+Wire Wire Line
+	3975 1500 4400 1500
+Text Label 3575 3700 2    50   ~ 0
+CLOCK_SHIFT
+Text Label 3575 2200 2    50   ~ 0
+CLOCK_STORE
+Text Label 3575 3500 2    50   ~ 0
+SERIAL_DATA
+Text Label 3575 4000 2    50   ~ 0
+CLOCK_STORE
+Text Label 3575 1900 2    50   ~ 0
+CLOCK_SHIFT
+Text Label 4375 2300 0    50   ~ 0
+A0
+Text Label 4375 2200 0    50   ~ 0
+A1
+Text Label 4375 2100 0    50   ~ 0
+A2
+Text Label 4375 2000 0    50   ~ 0
+A3
+Text Label 4375 1900 0    50   ~ 0
+A4
+Text Label 4375 1800 0    50   ~ 0
+A5
+Text Label 4375 4200 0    50   ~ 0
+A7
+Text Label 4375 4100 0    50   ~ 0
+A8
+Text Label 4375 4000 0    50   ~ 0
+A9
+Text Label 4375 3900 0    50   ~ 0
+A10
+Text Label 4375 3800 0    50   ~ 0
+A11
+Text Label 4375 3700 0    50   ~ 0
+A12
+Text Label 4375 3600 0    50   ~ 0
+A13
+$Comp
+L Device:R R1
+U 1 1 605F8A0C
+P 3425 2000
+F 0 "R1" H 3495 2046 50  0000 L CNN
+F 1 "R" H 3495 1955 50  0000 L CNN
+F 2 "geral:standard_2pins" V 3355 2000 50  0001 C CNN
+F 3 "~" H 3425 2000 50  0001 C CNN
+	1    3425 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0108
+U 1 1 605F8A06
+P 3275 2000
+F 0 "#PWR0108" H 3275 1850 50  0001 C CNN
+F 1 "+5V" H 3290 2173 50  0000 C CNN
+F 2 "" H 3275 2000 50  0001 C CNN
+F 3 "" H 3275 2000 50  0001 C CNN
+	1    3275 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 605F23EC
+P 3425 3800
+F 0 "R2" H 3495 3846 50  0000 L CNN
+F 1 "R" H 3495 3755 50  0000 L CNN
+F 2 "geral:standard_2pins" V 3355 3800 50  0001 C CNN
+F 3 "~" H 3425 3800 50  0001 C CNN
+	1    3425 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0109
+U 1 1 605B6B15
+P 3275 3800
+F 0 "#PWR0109" H 3275 3650 50  0001 C CNN
+F 1 "+5V" H 3290 3973 50  0000 C CNN
+F 2 "" H 3275 3800 50  0001 C CNN
+F 3 "" H 3275 3800 50  0001 C CNN
+	1    3275 3800
+	0    -1   -1   0   
+$EndComp
+Text Label 2450 2700 0    50   ~ 0
+~WE
+Text Label 4375 2400 0    50   ~ 0
+~OE
+Text Label 4375 1700 0    50   ~ 0
+A6
+Wire Wire Line
+	2850 1700 2850 3025
+Wire Wire Line
+	2850 3025 4700 3025
+Wire Wire Line
+	4700 3025 4700 4400
+Wire Wire Line
+	4700 4400 4375 4400
+Wire Wire Line
+	2850 1700 3575 1700
+Text Label 4375 3500 0    50   ~ 0
+A14
+Text Label 7000 4050 2    50   ~ 0
+D0
+$Comp
+L geral:flipSwitch U7
+U 1 1 6059A74C
+P 8475 3500
+F 0 "U7" H 9153 3396 50  0000 L CNN
+F 1 "flipSwitch" H 9153 3305 50  0000 L CNN
+F 2 "geral:mini_flipswitch2.54" H 8575 3700 50  0001 C CNN
+F 3 "" H 8575 3700 50  0001 C CNN
+	1    8475 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L geral:flipSwitch U5
+U 1 1 6059F369
+P 6425 3200
+F 0 "U5" H 7103 3096 50  0000 L CNN
+F 1 "flipSwitch" H 7103 3005 50  0000 L CNN
+F 2 "geral:mini_flipswitch2.54" H 6525 3400 50  0001 C CNN
+F 3 "" H 6525 3400 50  0001 C CNN
+	1    6425 3200
+	-1   0    0    1   
+$EndComp
+Text Label 8050 2950 0    50   ~ 0
+~WE
+Text Label 6475 3150 0    50   ~ 0
+A14
+$Comp
+L geral:flipSwitch U8
+U 1 1 605A2A49
+P 8775 2900
+F 0 "U8" H 9453 2796 50  0000 L CNN
+F 1 "flipSwitch" H 9453 2705 50  0000 L CNN
+F 2 "geral:mini_flipswitch2.54" H 8875 3100 50  0001 C CNN
+F 3 "" H 8875 3100 50  0001 C CNN
+	1    8775 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 605A9206
+P 6125 2175
+F 0 "R3" H 6195 2221 50  0000 L CNN
+F 1 "R" H 6195 2130 50  0000 L CNN
+F 2 "geral:standard_2pins" V 6055 2175 50  0001 C CNN
+F 3 "~" H 6125 2175 50  0001 C CNN
+	1    6125 2175
+	1    0    0    -1  
+$EndComp
+$Comp
+L geral:flipSwitch U4
+U 1 1 605AACE6
+P 6075 2575
+F 0 "U4" H 6753 2471 50  0000 L CNN
+F 1 "flipSwitch" H 6753 2380 50  0000 L CNN
+F 2 "geral:mini_flipswitch2.54" H 6175 2775 50  0001 C CNN
+F 3 "" H 6175 2775 50  0001 C CNN
+	1    6075 2575
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0110
+U 1 1 605AB690
+P 6125 2025
+F 0 "#PWR0110" H 6125 1875 50  0001 C CNN
+F 1 "+5V" H 6140 2198 50  0000 C CNN
+F 2 "" H 6125 2025 50  0001 C CNN
+F 3 "" H 6125 2025 50  0001 C CNN
+	1    6125 2025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 605ACC0D
+P 6125 2525
+F 0 "#PWR0111" H 6125 2275 50  0001 C CNN
+F 1 "GND" H 6130 2352 50  0000 C CNN
+F 2 "" H 6125 2525 50  0001 C CNN
+F 3 "" H 6125 2525 50  0001 C CNN
+	1    6125 2525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6475 2950 6475 2425
+Wire Wire Line
+	6475 2425 6125 2425
+Wire Wire Line
+	6475 3050 7000 3050
+$Comp
+L Device:R R4
+U 1 1 605B371C
+P 7275 1850
+F 0 "R4" H 7345 1896 50  0000 L CNN
+F 1 "R" H 7345 1805 50  0000 L CNN
+F 2 "geral:standard_2pins" V 7205 1850 50  0001 C CNN
+F 3 "~" H 7275 1850 50  0001 C CNN
+	1    7275 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L geral:flipSwitch U6
+U 1 1 605B3722
+P 7225 2250
+F 0 "U6" H 7903 2146 50  0000 L CNN
+F 1 "flipSwitch" H 7903 2055 50  0000 L CNN
+F 2 "geral:mini_flipswitch2.54" H 7325 2450 50  0001 C CNN
+F 3 "" H 7325 2450 50  0001 C CNN
+	1    7225 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0112
+U 1 1 605B3728
+P 7275 1700
+F 0 "#PWR0112" H 7275 1550 50  0001 C CNN
+F 1 "+5V" H 7290 1873 50  0000 C CNN
+F 2 "" H 7275 1700 50  0001 C CNN
+F 3 "" H 7275 1700 50  0001 C CNN
+	1    7275 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 605B372E
+P 7275 2200
+F 0 "#PWR0113" H 7275 1950 50  0001 C CNN
+F 1 "GND" H 7280 2027 50  0000 C CNN
+F 2 "" H 7275 2200 50  0001 C CNN
+F 3 "" H 7275 2200 50  0001 C CNN
+	1    7275 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7625 2100 7275 2100
+Wire Wire Line
+	7625 2100 7625 2475
+Wire Wire Line
+	7625 2475 6875 2475
+Wire Wire Line
+	6875 2475 6875 2950
+Wire Wire Line
+	6875 2950 7000 2950
+Wire Wire Line
+	8425 3650 8250 3650
+Wire Wire Line
+	8250 3650 8250 3150
+Wire Wire Line
+	8250 3150 8050 3150
+$Comp
+L Device:R R5
+U 1 1 605BA3BC
+P 9350 4375
+F 0 "R5" H 9420 4421 50  0000 L CNN
+F 1 "R" H 9420 4330 50  0000 L CNN
+F 2 "geral:standard_2pins" V 9280 4375 50  0001 C CNN
+F 3 "~" H 9350 4375 50  0001 C CNN
+	1    9350 4375
+	1    0    0    -1  
+$EndComp
+$Comp
+L geral:flipSwitch U9
+U 1 1 605BA3C2
+P 9300 4775
+F 0 "U9" H 9978 4671 50  0000 L CNN
+F 1 "flipSwitch" H 9978 4580 50  0000 L CNN
+F 2 "geral:mini_flipswitch2.54" H 9400 4975 50  0001 C CNN
+F 3 "" H 9400 4975 50  0001 C CNN
+	1    9300 4775
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 605BA3CE
+P 9350 4725
+F 0 "#PWR0115" H 9350 4475 50  0001 C CNN
+F 1 "GND" H 9355 4552 50  0000 C CNN
+F 2 "" H 9350 4725 50  0001 C CNN
+F 3 "" H 9350 4725 50  0001 C CNN
+	1    9350 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 4625 9350 4625
+Wire Wire Line
+	8050 3050 8725 3050
+Wire Wire Line
+	8400 3150 8400 2850
+Wire Wire Line
+	8400 2850 8050 2850
+Wire Wire Line
+	8725 2950 8725 2750
+Wire Wire Line
+	8725 2750 9700 2750
+Wire Wire Line
+	9700 2750 9700 4625
+$Comp
+L geral:flipSwitch U10
+U 1 1 605F57EA
+P 2800 4950
+F 0 "U10" H 3478 4846 50  0000 L CNN
+F 1 "flipSwitch" H 3478 4755 50  0000 L CNN
+F 2 "geral:mini_flipswitch2.54" H 2900 5150 50  0001 C CNN
+F 3 "" H 2900 5150 50  0001 C CNN
+	1    2800 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2925 4000 2925 4800
+Wire Wire Line
+	2925 4800 2850 4800
+Wire Wire Line
+	2850 4100 2450 4100
+Wire Wire Line
+	2450 4000 2925 4000
+Wire Wire Line
+	2850 4100 2850 4700
+Text Label 8050 2850 0    50   ~ 0
+MEMPOWER
+$Comp
+L power:+5V #PWR0114
+U 1 1 605BA3C8
+P 9350 4225
+F 0 "#PWR0114" H 9350 4075 50  0001 C CNN
+F 1 "+5V" H 9365 4398 50  0000 C CNN
+F 2 "" H 9350 4225 50  0001 C CNN
+F 3 "" H 9350 4225 50  0001 C CNN
+	1    9350 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L geral:flipSwitch U11
+U 1 1 6060E5CD
+P 8500 1900
+F 0 "U11" H 9178 1796 50  0000 L CNN
+F 1 "flipSwitch" H 9178 1705 50  0000 L CNN
+F 2 "geral:mini_flipswitch2.54" H 8600 2100 50  0001 C CNN
+F 3 "" H 8600 2100 50  0001 C CNN
+	1    8500 1900
+	1    0    0    -1  
+$EndComp
+Text Label 8450 2050 2    50   ~ 0
+MEMPOWER
+$Comp
+L power:+5V #PWR0104
+U 1 1 6061037B
+P 8450 1950
+F 0 "#PWR0104" H 8450 1800 50  0001 C CNN
+F 1 "+5V" H 8465 2123 50  0000 C CNN
+F 2 "" H 8450 1950 50  0001 C CNN
+F 3 "" H 8450 1950 50  0001 C CNN
+	1    8450 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 60610AA6
+P 8450 2150
+F 0 "#PWR0116" H 8450 1900 50  0001 C CNN
+F 1 "GND" H 8455 1977 50  0000 C CNN
+F 2 "" H 8450 2150 50  0001 C CNN
+F 3 "" H 8450 2150 50  0001 C CNN
+	1    8450 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 608297F2
+P 8250 3850
+F 0 "#PWR0117" H 8250 3600 50  0001 C CNN
+F 1 "GND" H 8255 3677 50  0000 C CNN
+F 2 "" H 8250 3850 50  0001 C CNN
+F 3 "" H 8250 3850 50  0001 C CNN
+	1    8250 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 3850 8250 3850
+$Comp
+L power:+5V #PWR0107
+U 1 1 6083240F
+P 4400 1500
+F 0 "#PWR0107" H 4400 1350 50  0001 C CNN
+F 1 "+5V" H 4415 1673 50  0000 C CNN
+F 2 "" H 4400 1500 50  0001 C CNN
+F 3 "" H 4400 1500 50  0001 C CNN
+	1    4400 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6675 4350 7000 4350
+Text Label 8050 4450 0    50   ~ 0
+D2
+$Comp
+L geral:ZIFsocket20_Memory Z1
+U 1 1 60589CFF
+P 7500 3750
+F 0 "Z1" H 7525 4965 50  0000 C CNN
+F 1 "ZIFsocket20_Memory" H 7525 4874 50  0000 C CNN
+F 2 "geral:ZIF socket" H 7500 4950 50  0001 C CNN
+F 3 "" H 7500 4950 50  0001 C CNN
+	1    7500 3750
+	1    0    0    -1  
+$EndComp
+Text Label 7000 4550 2    50   ~ 0
+D1
+Text Label 7000 4650 2    50   ~ 0
+D0
+Text Label 8050 4550 0    50   ~ 0
+D1
+Text Label 8050 4650 0    50   ~ 0
+D0
+$Comp
+L Device:C C1
+U 1 1 6063641E
+P 8575 2575
+F 0 "C1" H 8690 2621 50  0000 L CNN
+F 1 "C" H 8690 2530 50  0000 L CNN
+F 2 "geral:standard_2pins_half" H 8613 2425 50  0001 C CNN
+F 3 "~" H 8575 2575 50  0001 C CNN
+	1    8575 2575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8725 3150 8575 3150
+Wire Wire Line
+	8575 2725 8575 3150
+Connection ~ 8575 3150
+Wire Wire Line
+	8575 3150 8400 3150
+$Comp
+L power:GND #PWR0118
+U 1 1 6063B445
+P 8950 2500
+F 0 "#PWR0118" H 8950 2250 50  0001 C CNN
+F 1 "GND" H 8955 2327 50  0000 C CNN
+F 2 "" H 8950 2500 50  0001 C CNN
+F 3 "" H 8950 2500 50  0001 C CNN
+	1    8950 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8575 2425 8950 2425
+Wire Wire Line
+	8950 2425 8950 2500
+$EndSCHEMATC

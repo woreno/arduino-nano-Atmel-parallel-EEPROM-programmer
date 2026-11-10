@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "parallel eprom symbols")(type Legacy)(uri "${KIPRJMOD}/parallel eprom symbols.lib")(options "")(descr ""))
+  (lib (name plel-rescue)(type Legacy)(uri ${KIPRJMOD}/plel-rescue.lib)(options "")(descr ""))
+)
